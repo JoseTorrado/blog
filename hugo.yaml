@@ -54,7 +54,7 @@ params:
     favicon: /favicon.ico
 
     footer:
-        since: 2020
+        since: 2024
         customText:
 
     dateFormat:

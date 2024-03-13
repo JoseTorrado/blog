@@ -1,13 +1,13 @@
 ---
-title: About
-description: Hugo, the world's fastest framework for building websites
-date: '2019-02-28'
+title: About Me
+description: Nice to meet you
+date: '2024-03-13'
 aliases:
-  - about-us
-  - about-hugo
+  - about-me
+  - about
   - contact
 license: CC BY-NC-ND
-lastmod: '2020-10-09'
+lastmod: '2024-03-13'
 menu:
     main: 
         weight: -90
@@ -15,20 +15,12 @@ menu:
             icon: user
 ---
 
-Written in Go, Hugo is an open source static site generator available under the [Apache License 2.0.](https://github.com/gohugoio/hugo/blob/master/LICENSE) Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.
+I am Jose Torrado, a Software Developer with emphasis in Data Engineering based in the US. I have years of experience working with data at various scales and for a variety or purposes. My main area of expertise is Big Data processing - creating batch and streaming data pipelines. I do a good bit of Cloud Architecture design for my job, leveraging Google Cloud Platform (GCP) solutions mostly. 
 
-Hugo makes use of a variety of open source projects including:
+I love studying and learning new things - pretty much anything. Lately I have been intereseted in the idea of being a [polymath](https://en.wikipedia.org/wiki/Polymath) - the concept really resonates with me so interesting to see there is a name for it! Especially taking hard concepts and making them simple enough for me to understand. I find that quite rewarding.
 
-* https://github.com/yuin/goldmark
-* https://github.com/alecthomas/chroma
-* https://github.com/muesli/smartcrop
-* https://github.com/spf13/cobra
-* https://github.com/spf13/viper
+The picture, if you are curious, is an DALL-E generated render of my sweet dog Roco - although he looks a lot more thretening in there than he is.
 
-Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.
+Teaching is a great form of learning (see [Feyman Technique](https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230)), so that is what I am hoping to achieve here. Share what I learn as I go, maybe it will be helpful for someone else!
 
-Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.
-
-Websites built with Hugo are extremely fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.
-
-Learn more and contribute on [GitHub](https://github.com/gohugoio).
+Thanks for being here.
