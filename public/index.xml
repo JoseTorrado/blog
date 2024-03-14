@@ -7,17 +7,21 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Wed, 13 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>About Me</title>
-        <link>http://localhost:1313/about-me/</link>
+        <title>About</title>
+        <link>http://localhost:1313/about/</link>
         <pubDate>Wed, 13 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/about-me/</guid>
+        <guid>http://localhost:1313/about/</guid>
         <description>&lt;p&gt;I am Jose Torrado, a Software Developer with emphasis in Data Engineering based in the US. I have years of experience working with data at various scales and for a variety or purposes. My main area of expertise is Big Data processing - creating batch and streaming data pipelines. I do a good bit of Cloud Architecture design for my job, leveraging Google Cloud Platform (GCP) solutions mostly.&lt;/p&gt;
 &lt;p&gt;I love studying and learning new things - pretty much anything. Lately I have been intereseted in the idea of being a &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Polymath&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;polymath&lt;/a&gt; - the concept really resonates with me so interesting to see there is a name for it! Especially taking hard concepts and making them simple enough for me to understand. I find that quite rewarding.&lt;/p&gt;
 &lt;p&gt;The picture, if you are curious, is an DALL-E generated render of my sweet dog Roco - although he looks a lot more thretening in there than he is.&lt;/p&gt;
-&lt;p&gt;Teaching is a great form of learning (see &lt;a class=&#34;link&#34; href=&#34;https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
-    &gt;Feyman Technique&lt;/a&gt;), so that is what I am hoping to achieve here. Share what I learn as I go, maybe it will be helpful for someone else!&lt;/p&gt;
+&lt;p&gt;Teaching is a great form of learning - If you understand something well enough to teach it to others, then you have learened it yourself (see &lt;a class=&#34;link&#34; href=&#34;https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Feyman Technique&lt;/a&gt;). That is what I am hoping to achieve here. Share what I learn as I go, maybe it will be helpful for someone else!&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;ldquo;The first principle is that you must not fool yourself and you are the easiest person to fool.&amp;quot;&lt;br&gt;
+— &lt;cite&gt;Richard P. Feynman&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;Thanks for being here.&lt;/p&gt;
 </description>
         </item>

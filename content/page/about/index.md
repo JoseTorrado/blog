@@ -1,5 +1,5 @@
 ---
-title: About Me
+title: About
 description: Nice to meet you
 date: '2024-03-13'
 aliases:
@@ -21,6 +21,9 @@ I love studying and learning new things - pretty much anything. Lately I have be
 
 The picture, if you are curious, is an DALL-E generated render of my sweet dog Roco - although he looks a lot more thretening in there than he is.
 
-Teaching is a great form of learning (see [Feyman Technique](https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230)), so that is what I am hoping to achieve here. Share what I learn as I go, maybe it will be helpful for someone else!
+Teaching is a great form of learning - If you understand something well enough to teach it to others, then you have learened it yourself (see [Feyman Technique](https://medium.com/taking-note/learning-from-the-feynman-technique-5373014ad230)). That is what I am hoping to achieve here. Share what I learn as I go, maybe it will be helpful for someone else!
+
+> "The first principle is that you must not fool yourself and you are the easiest person to fool."<br>
+> — <cite>Richard P. Feynman</cite>
 
 Thanks for being here.
