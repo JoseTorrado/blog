@@ -1,5 +1,6 @@
 baseurl: https://example.com
 languageCode: en-us
+enableEmoji: true
 theme: Stack
 paginate: 3
 title: Jose Torrado
@@ -11,6 +12,7 @@ DefaultContentLanguage: en
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: false
+
 
 languages:
     en:
