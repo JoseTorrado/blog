@@ -2,7 +2,7 @@
 author = "Jose Torrado"
 title = "Navigating Shiny Object Syndrome in Data Engineering: A Balanced Approach"
 date = "2024-03-17"
-description = ""
+description = "Focus on what matters to get the results you want"
 tags = [
     "data-engineering",
     "career",
@@ -10,7 +10,7 @@ tags = [
     "mentality"
 ]
 categories = [
-    "data-engieering",
+    "data-engineering",
     "career"
 ]
 image = "shiny-object.jpeg"

@@ -7,19 +7,27 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Sun, 17 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Data-Egnieering</title>
-        <link>http://localhost:1313/categories/data-egnieering/</link>
+        <title>Career</title>
+        <link>http://localhost:1313/categories/career/</link>
         <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/categories/data-egnieering/</guid>
+        <guid>http://localhost:1313/categories/career/</guid>
         <description></description>
         </item>
         <item>
-        <title>Career</title>
-        <link>http://localhost:1313/categories/career/</link>
+        <title>Data-Engieering</title>
+        <link>http://localhost:1313/categories/data-engieering/</link>
+        <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/data-engieering/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Data-Engineering</title>
+        <link>http://localhost:1313/categories/data-engineering/</link>
         <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/categories/career/</guid>
+        <guid>http://localhost:1313/categories/data-engineering/</guid>
         <description></description>
         </item>
         <item>
@@ -28,6 +36,14 @@
         <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/intro/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Pipelines</title>
+        <link>http://localhost:1313/categories/pipelines/</link>
+        <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/pipelines/</guid>
         <description></description>
         </item>
         <item>

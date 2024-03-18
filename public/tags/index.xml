@@ -23,6 +23,14 @@
         <description></description>
         </item>
         <item>
+        <title>Learning</title>
+        <link>http://localhost:1313/tags/learning/</link>
+        <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/learning/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Mentality</title>
         <link>http://localhost:1313/tags/mentality/</link>
         <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
@@ -36,6 +44,14 @@
         <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/tags/intro/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Streaming</title>
+        <link>http://localhost:1313/tags/streaming/</link>
+        <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/streaming/</guid>
         <description></description>
         </item>
         

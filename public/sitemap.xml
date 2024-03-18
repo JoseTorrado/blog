@@ -8,13 +8,19 @@
     <loc>http://localhost:1313/tags/career/</loc>
     <lastmod>2024-03-17T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/categories/career/</loc>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2024-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/data-egnieering/</loc>
+    <loc>http://localhost:1313/categories/data-engieering/</loc>
     <lastmod>2024-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-engineering/</loc>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/learning/</loc>
     <lastmod>2024-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/mentality/</loc>
@@ -29,7 +35,7 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/career/</loc>
+    <loc>http://localhost:1313/categories/data-engineering/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/first-post/</loc>
@@ -39,6 +45,15 @@
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/intro/</loc>
+    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/pipelines/</loc>
+    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/simplifying-stream-processing-an-introduction-to-pub/sub/</loc>
+    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/streaming/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>

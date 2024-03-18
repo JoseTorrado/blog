@@ -6,7 +6,37 @@
         <description>Recent content on Jose Torrado</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 17 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 18 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Simplifying Stream Processing: An Introduction to Pub/Sub</title>
+        <link>http://localhost:1313/p/simplifying-stream-processing-an-introduction-to-pub/sub/</link>
+        <pubDate>Mon, 18 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/simplifying-stream-processing-an-introduction-to-pub/sub/</guid>
+        <description>&lt;img src="http://localhost:1313/p/simplifying-stream-processing-an-introduction-to-pub/sub/pubsub.jpg" alt="Featured image of post Simplifying Stream Processing: An Introduction to Pub/Sub" /&gt;&lt;p&gt;As data engineers, we often find ourselves at the crossroads of data streams that demand real-time processing and insights. Enter Google Cloud Pub/Sub, a fully-managed real-time messaging service that allows you to send and receive messages between independent applications. Think of it as a robust postal service for your data, ensuring that every byte of information is delivered to the right application at the right time.&lt;/p&gt;
+&lt;h2 id=&#34;what-is-pubsub-and-how-does-it-fit-into-streaming-pipelines&#34;&gt;What is Pub/Sub, and How Does it Fit into Streaming Pipelines?&lt;/h2&gt;
+&lt;p&gt;At its essence, Pub/Sub is about decoupling senders (&lt;code&gt;publishers&lt;/code&gt;) from receivers (&lt;code&gt;subscribers&lt;/code&gt;).
+Publishers send messages to a topic, and subscribers listen to that topic, reacting to new messages as they arrive. This is crucial in a streaming pipeline, where live data - like fluctuating Bitcoin prices - needs to be captured, analyzed, and acted upon instantaneously.&lt;/p&gt;
+&lt;p&gt;Pub/Sub services fit into streaming pipelines as the data backbone, facilitating seamless data flow between the components of a system. They shine in scenarios where you have data that&amp;rsquo;s constantly being produced and needs immediate attention.&lt;/p&gt;
+&lt;h2 id=&#34;lifecycle-of-a-message-in-a-streaming-pipeline-with-pubsub&#34;&gt;Lifecycle of a Message in a Streaming Pipeline with Pubsub&lt;/h2&gt;
+&lt;p&gt;To truly grasp the power of Pub/Sub, let’s walk through the lifecycle of a message within a streaming pipeline:&lt;/p&gt;
+&lt;h3 id=&#34;production&#34;&gt;Production&lt;/h3&gt;
+&lt;p&gt;A message is born when a publisher, say a cryptocurrency exchange, determines the latest Bitcoin price and decides it&amp;rsquo;s time to share it with the world.&lt;/p&gt;
+&lt;h3 id=&#34;publication&#34;&gt;Publication&lt;/h3&gt;
+&lt;p&gt;This message is wrapped up neatly (serialized) and sent to a Pub/Sub topic. Our topic, bitcoin-price-feed, acts as the mailbox, collecting all outbound messages.&lt;/p&gt;
+&lt;h3 id=&#34;delivery&#34;&gt;Delivery&lt;/h3&gt;
+&lt;p&gt;Pub/Sub takes over as the diligent postmaster, ensuring that this message is delivered to all subscribers who have expressed interest in bitcoin-price-feed. It&amp;rsquo;s all about the push and pull—subscribers can either choose to receive messages as they come (push) or request them at their own pace (pull).&lt;/p&gt;
+&lt;h3 id=&#34;processing&#34;&gt;Processing&lt;/h3&gt;
+&lt;p&gt;Subscribers, often stream processors like Google Dataflow, unwrap the message (deserialize) and perform necessary operations—analyzing trends, triggering alerts, or aggregating data for further analysis.&lt;/p&gt;
+&lt;h3 id=&#34;storage-or-action&#34;&gt;Storage or Action&lt;/h3&gt;
+&lt;p&gt;Once processed, the message either gets stored for historical analysis or triggers actions in other systems. This could mean updating a live dashboard or adjusting an investment strategy.&lt;/p&gt;
+&lt;h3 id=&#34;acknowledgment&#34;&gt;Acknowledgment&lt;/h3&gt;
+&lt;p&gt;The final step is the subscriber telling Pub/Sub, &amp;ldquo;Message received and handled.&amp;rdquo; This acknowledgment prevents the same message from being delivered again, keeping the pipeline efficient and clutter-free.&lt;/p&gt;
+&lt;h2 id=&#34;an-ally-for-streaming&#34;&gt;An Ally for Streaming&lt;/h2&gt;
+&lt;p&gt;You can really consider Pub/Sub an ally that makes real-time data processing less of a daunting task. It&amp;rsquo;s scalable, handling fluctuations in data volume effortlessly. It’s reliable, ensuring that messages are delivered promptly and accurately. And most importantly, it’s flexible, integrating with a wide array of Google Cloud services and third-party applications.&lt;/p&gt;
+&lt;p&gt;In conclusion, Pub/Sub is a pivotal piece of the streaming puzzle, enabling data engineers to build systems that are both responsive and robust. It’s about bringing order and reliability to the potential chaos of live data streams. As data continues to fuel the decisions of tomorrow, services like Pub/Sub will be the engines that keep the pipelines running smoothly.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Navigating Shiny Object Syndrome in Data Engineering: A Balanced Approach</title>
         <link>http://localhost:1313/p/navigating-shiny-object-syndrome-in-data-engineering-a-balanced-approach/</link>
         <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
