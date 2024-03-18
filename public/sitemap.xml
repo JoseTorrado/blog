@@ -3,15 +3,33 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/career/</loc>
-    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/career/</loc>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/data-egnieering/</loc>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-engineering/</loc>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mentality/</loc>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/navigating-shiny-object-syndrome-in-data-engineering-a-balanced-approach/</loc>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-03-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/career/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/first-post/</loc>
@@ -21,12 +39,6 @@
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/intro/</loc>
-    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2024-03-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-03-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>

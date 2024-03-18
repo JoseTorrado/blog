@@ -6,7 +6,48 @@
         <description>Recent content on Jose Torrado</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 16 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 17 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Navigating Shiny Object Syndrome in Data Engineering: A Balanced Approach</title>
+        <link>http://localhost:1313/p/navigating-shiny-object-syndrome-in-data-engineering-a-balanced-approach/</link>
+        <pubDate>Sun, 17 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/navigating-shiny-object-syndrome-in-data-engineering-a-balanced-approach/</guid>
+        <description>&lt;img src="http://localhost:1313/p/navigating-shiny-object-syndrome-in-data-engineering-a-balanced-approach/shiny-object.jpeg" alt="Featured image of post Navigating Shiny Object Syndrome in Data Engineering: A Balanced Approach" /&gt;&lt;p&gt;Picture this: you&amp;rsquo;re a kid again, standing in front of the most dazzling candy store imaginable, with every shelf glittering with the promise of the most delectable sweet treat you have ever tasted before.
+That&amp;rsquo;s pretty much the life of a tech enthusiast or data engineer in today&amp;rsquo;s world (And to be fair, in any industry).
+Shiny Object Syndrome (SOS) isn&amp;rsquo;t just a quirky phrase—it&amp;rsquo;s our daily reality, where the allure of the new and shiny tempts us at every turn.
+As someone who&amp;rsquo;s navigated these waters, juggling the excitement of innovation with the steadiness of foundational work, I&amp;rsquo;d like to share a more balanced perspective on this phenomenon.&lt;/p&gt;
+&lt;h2 id=&#34;a-dance-with-distraction&#34;&gt;A Dance With Distraction&lt;/h2&gt;
+&lt;p&gt;SOS hits hard when the new shiny thing drops into the tech sphere.
+Suddenly, it&amp;rsquo;s all anyone can talk about.
+AI is the poster child of this syndrome in tech today.
+Everywhere you turn, there&amp;rsquo;s a buzz about how AI will revolutionize everything.
+Don’t get me wrong; AI is a game-changer, but rushing to adopt AI without having the basics in place is like trying to run before you can walk.
+If the foundation isn’t there — if the data infrastructure is more of a house of cards — then throwing AI into the mix is setting up for a spectacular fall.&lt;/p&gt;
+&lt;h2 id=&#34;ai-ml-and-the-echoes-of-past-mistakes&#34;&gt;AI, ML and the Echoes of Past Mistakes&lt;/h2&gt;
+&lt;p&gt;The drive towards new technologies often springs from a deep-seated fear of missing out (FOMO).
+This isn&amp;rsquo;t just about personal inclinations; it&amp;rsquo;s a collective wave that sweeps through companies and communities, urging us to jump on the bandwagon or be left behind.
+But the reality is much different: rushing towards the new without a firm grasp on the essentials leads to a mirage of progress, not real advancement.
+Remember the machine learning (ML) frenzy a few years back? It’s déjà vu with AI today.
+We’ve been so eager to slap AI onto everything that we’ve forgotten to ask the critical question: do our teams have the quality data and infrastructure AI needs to thrive?
+Without these, even the most advanced AI initiatives can flounder, proving the old adage &amp;ldquo;garbage in, garbage out&amp;rdquo; painfully true.&lt;/p&gt;
+&lt;h2 id=&#34;from-enthusiasm-to-expertise&#34;&gt;From Enthusiasm to Expertise&lt;/h2&gt;
+&lt;p&gt;The journey through the world of data engineering is as much about mastering the tools of today as it is about preparing for the technologies of tomorrow.
+The excitement for learning new things is invaluable (an a quality that will take you far in any field), but without application, it&amp;rsquo;s just intellectual collection.
+This is where the balance comes into play — learning and applying in equal measure.
+Moving beyond &lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/pulse/how-escape-tutorial-hell-ikechukwu-vincent/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;tutorial hell&lt;/a&gt; requires us to not only absorb new knowledge but also to integrate it into our work in meaningful ways.&lt;/p&gt;
+&lt;p&gt;Foucs on just a few of the shiny things you envounter and see that learning to completion - within reason. Learn the technology, consume the tutorials, and most importantly build apps applying what you learned. This will not only cement your learning but it also leaves you with a nice portfolio to show off to employers and colleagues.&lt;/p&gt;
+&lt;h2 id=&#34;embracing-the-journey-beyond-the-shiny&#34;&gt;Embracing the Journey: Beyond the Shiny&lt;/h2&gt;
+&lt;p&gt;The path forward involves a conscientious approach to innovation. It&amp;rsquo;s about recognizing the value of new technologies like AI, not as trophies to be chased but as tools to be wielded wisely. This means prioritizing the development of a robust data infrastructure and cultivating a deep understanding of the principles underlying our field. By doing so, we can ensure that when we adopt new technologies, we&amp;rsquo;re doing so not for the sake of novelty but for the genuine benefits they bring.&lt;/p&gt;
+&lt;h2 id=&#34;wrapping-up&#34;&gt;Wrapping up&lt;/h2&gt;
+&lt;p&gt;In conclusion - Shiny Object Syndrome is a siren call in the tech world, luring us with promises of innovation and success.
+But true innovation isn’t about chasing the latest trend; it’s about making informed, strategic decisions that build on a solid foundation.
+It’s about learning deeply, applying wisely, and, most importantly, embracing the journey, bumps and all.
+As data engineers, our mission extends beyond the allure of new technologies; it&amp;rsquo;s about building sustainable, impactful solutions.
+Let&amp;rsquo;s embrace the new, by all means, but let&amp;rsquo;s do so on a bedrock of solid knowledge and practice.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>First Post</title>
         <link>http://localhost:1313/p/first-post/</link>
         <pubDate>Sat, 16 Mar 2024 00:00:00 +0000</pubDate>
@@ -14,21 +55,25 @@
         <guid>http://localhost:1313/p/first-post/</guid>
         <description>&lt;img src="http://localhost:1313/p/first-post/intro-background.jpg" alt="Featured image of post First Post" /&gt;&lt;p&gt;After a while of debating on it, I have decided to create a blog. My idea is ot make it a compendium of things I have learend over the years, on my self-learning pursuit of becoming a better Engineer - focusing on technical and career development topics. I might eventually delve into other areas of study, depending on how I feel&amp;hellip;&lt;/p&gt;
 &lt;h2 id=&#34;who-am-i&#34;&gt;Who am I?&lt;/h2&gt;
-&lt;p&gt;A little more in depth intro than what you will find in the &amp;ldquo;About&amp;rdquo; section - I am Jose and I am originally from Venezuela 🇻🇪  I moves to the US for undergratdaute school. I majored in Mecahnical Engineering - I figured since I had no clue what I wanted to do after school, ME would be a good generalist discipline to study because of the breath of the curriculum&lt;/p&gt;
+&lt;p&gt;A little more in depth intro than what you will find in the &amp;ldquo;About&amp;rdquo; section - I am Jose and I am originally from Venezuela 🇻🇪   moved to the US for undergratdaute school, majoring in Mecahnical Engineering.
+I figured since I had no clue what I wanted to do after school, ME would be a good generalist discipline to study because of the breadth of the curriculum.&lt;/p&gt;
 &lt;p&gt;I took an introduction to Computer Science course as part of my reqs - basically an introduction to a popular language for scientists and engineers called MATLAB&lt;/p&gt;
-&lt;p&gt;With a few free hours one semester, I decided to enroll in an additional course, Intro to Python. Probably one of the best decisions I have made to this day. Here I really discovered my interest for &lt;em&gt;coding&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Afterwards, with a few free hours one semester, I decided to enroll in an additional course, Intro to Python. Probably one of the best decisions I have made to this day. Here I really discovered my interest for &lt;em&gt;coding&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;I was also doing material science research for my department&amp;rsquo;s Engineering Blast and Impact Dynamics lab. For those interested, we were conducting testing on a variety of polymers under high stress-strain conditions using one of the few &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Split-Hopkinson_pressure_bar&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Split-Hopkinson&lt;/a&gt; pressure bar setups in the country.&lt;/p&gt;
-&lt;p&gt;This was my first introduciton to in depth data anlysis - we were using strain gauge readings to determine the mechanical proeprties of novel composite materials. Pretty cool, co-authored a few scientific papers with the team - some of the coolest friends I have.&lt;/p&gt;
+&lt;p&gt;This was my first introduciton to in-depth data anlysis - we were using strain gauge readings to determine the mechanical proeprties of novel composite materials. Pretty cool, co-authored a few scientific papers with the team - some of the coolest friends I have.&lt;/p&gt;
 &lt;h2 id=&#34;on-to-data-engineering&#34;&gt;On to Data Engineering&lt;/h2&gt;
-&lt;p&gt;After school I decided to pursue a Data Analyst position with the company I interned for during my junior year. I was worked at a distribtuion center for a very popular e-commerce business, using &lt;strong&gt;all kinds of data&lt;/strong&gt; regarding inventory, order fullfilment, headcounts, etc. I worked on tons of reporting, data visualizations, basical modeling and honestly pretty advanced SQL queries. My team here was made up by a bunch of geniuses, and with me being hungry for learning, it was the perfect environment.&lt;/p&gt;
+&lt;p&gt;After school I decided to pursue a Data Analyst position with the company I interned for during my junior year.
+I was worked at a distribtuion center for a very popular e-commerce business, using &lt;strong&gt;all kinds of data&lt;/strong&gt; regarding inventory, order fullfilment, headcounts, etc.
+I worked on tons of reporting, data visualizations, basical modeling and honestly pretty advanced SQL queries.
+My team here was made up by a bunch of geniuses, and with me being hungry for learning, it was the perfect environment.&lt;/p&gt;
 &lt;p&gt;Looking for more technical challenges I moved to a Data Engineer position with an analytics team, and my growth was exponential from that point.
 I was now working with data at a very large scale - so I picked up experience in distributed processing frameworks like Spark.
 As I gathered more experience I was then involved in more system architecture projects, where I was designing systems that our team would use to generate data for downstream teams/applications.
 This involves batch and streaming pipelines, as well as multiple kinds of reports and viz apps.&lt;/p&gt;
 &lt;p&gt;I was also given a driver seat in my team&amp;rsquo;s migration from on-prem resources to Google Cloud Platform - this was another multiplier for my growth. I have been able to learn not only the different cloud services, but also how to desing and implement systems that integrate them together. Also been able to pick up expreience with infrastructure management with IaaC and CICD&lt;/p&gt;
 &lt;h2 id=&#34;tldr&#34;&gt;TLDR&lt;/h2&gt;
-&lt;p&gt;I have discovered that I love learning, and have a knack for making things simple to understand - that&amp;rsquo;s what helps me learn them :grinning_squinting_face:. I also love taking notes, so figured I shared what I learn with others and see if it is helpful. Give back to the community that I have learned so much from! Hope you find somethign useful out of my notes. Thanks for being here.&lt;/p&gt;
+&lt;p&gt;I have discovered that I love learning, and have a knack for making things simple to understand - that&amp;rsquo;s what helps me learn them 😆. I also love taking notes, so figured I shared what I learn with others and see if it is helpful. Give back to the community that I have learned so much from! Hope you find something useful out of my notes. Thanks for being here.&lt;/p&gt;
 &lt;p&gt;&amp;ndash; Jose&lt;/p&gt;
 </description>
         </item>
