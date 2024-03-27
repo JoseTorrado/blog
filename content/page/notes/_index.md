@@ -1,9 +1,9 @@
 ---
 menu:
     main:
-        name: Blog
+        name: Notes
         weight: -100
         params:
-            icon: home
+            icon: notebook
 
 ---
