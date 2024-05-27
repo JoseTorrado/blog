@@ -6,7 +6,79 @@
         <description>Recent content on Jose Torrado</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Wed, 27 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 27 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Top 5 Common Data Pipeline Pitfalls and How to Avoid Them</title>
+        <link>http://localhost:1313/p/top-5-common-data-pipeline-pitfalls-and-how-to-avoid-them/</link>
+        <pubDate>Mon, 27 May 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/top-5-common-data-pipeline-pitfalls-and-how-to-avoid-them/</guid>
+        <description>&lt;img src="http://localhost:1313/p/top-5-common-data-pipeline-pitfalls-and-how-to-avoid-them/data-pipline.png" alt="Featured image of post Top 5 Common Data Pipeline Pitfalls and How to Avoid Them" /&gt;&lt;h1 id=&#34;theres-always-issues&#34;&gt;There&amp;rsquo;s always issues&amp;hellip;&lt;/h1&gt;
+&lt;p&gt;Building and maintaining data pipelines can be a complex task, often facing challenges that affect the performance and reliability of your solutions. I want to cover five common pitfalls you will likely face in data pipeline creation and practical solutions to them.&lt;/p&gt;
+&lt;h2 id=&#34;data-duplication&#34;&gt;Data Duplication&lt;/h2&gt;
+&lt;p&gt;Data duplication occurs when the same data is ingested, processed and (most importantly) inserted into the final location multiple times. This leads to inconsistent untrustworthy data and inflated storage costs (bad bad).&lt;/p&gt;
+&lt;p&gt;How to Avoid:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Create &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Idempotence&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Idempotent&lt;/a&gt; Pipelines whenever possible:&lt;/strong&gt; Ensure all data processing steps (Extract-Transform-Load) can be safely repeated without creating duplicates.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Implement Deduping Logic:&lt;/strong&gt; Use unique keys or checksums to identify and remove duplicate records.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For example, when ingesting data from a message queue like &lt;a class=&#34;link&#34; href=&#34;https://torrado.io/p/simplifying-stream-processing-an-introduction-to-pub/sub/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;PubSub&lt;/a&gt;, include a unique identifier for each message and use it to check for duplicates before processing.&lt;/p&gt;
+&lt;h2 id=&#34;latency-issues&#34;&gt;Latency Issues&lt;/h2&gt;
+&lt;p&gt;High latency of data delivery can impact your customer, affecting real-time analytics and decision making. When data is not fresh, it is usually not useful to stakeholders. You want your hard work to have impact.&lt;/p&gt;
+&lt;p&gt;How to Avoid:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Optimize Data Processing:&lt;/strong&gt; Use parallel processing adn distributed systems to handle large amounts of data efficiently. Think Apache Spark for example.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Monitor and Tune Performance:&lt;/strong&gt; Regularly monitor resource usage of your data pipeline, Out-of-Memory errors and other possible warning signs. This will give you an idea if your pipeline needs more resources to run faster/more efficiently.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;schema-mismatches&#34;&gt;Schema Mismatches&lt;/h2&gt;
+&lt;p&gt;Schema mismatches between different stages of the pipeline can lead to data corruption and processing failures. You also want to guarantee a schema for your downstream consumers, and notify them with ample time when a change is coming.&lt;/p&gt;
+&lt;p&gt;How to Avoid:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Schema Registry:&lt;/strong&gt; Use a schema registry to enforce schema consistency and manage schema evolution.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Version Control:&lt;/strong&gt; Version your schemas and ensure backward and forward compatibility.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Using git for version control should be standard practice - this will help you keep ALL your code, not just schemas, consistent.&lt;/p&gt;
+&lt;h2 id=&#34;no-error-handling&#34;&gt;No Error Handling&lt;/h2&gt;
+&lt;p&gt;Not having enough error handling and logging can be a nightmare when trying to troubleshoot pipleine errors. This can also lead to additional data loss if not implemented correclty.&lt;/p&gt;
+&lt;p&gt;How to Avoid:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Implement Retry Mechanisms:&lt;/strong&gt; automatically retry pipelines whenever errors are not associated to the pipeline logic itself. Think: not sufficient compute resources - automatic retries will save you time here.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Logging and Alerts:&lt;/strong&gt; Implement comprehensive logging into your code, this will help with troubleshooting. Set up automatic alerts on failures - this can be done with webhooks to Slack for example.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;bad-resource-utilization&#34;&gt;Bad Resource Utilization&lt;/h2&gt;
+&lt;p&gt;Cloud compute is expensive - you want to make sure you are getting the most out of it AND paying for only what you need!&lt;/p&gt;
+&lt;p&gt;How to Avoid:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Auto-Scaling:&lt;/strong&gt; Memorize this term and make it your best friend. Set auto-scaling to dynamically (and automatically) adjust the resources used based on the workload.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Resource Monitoring:&lt;/strong&gt; Regularly monitor resource usage and optimize configurations. Creating monitoring dashboards to keep track of usage and costs is a great idea.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h1 id=&#34;therefore-nonetheless&#34;&gt;Therefore, Nonetheless&lt;/h1&gt;
+&lt;p&gt;By being aware of these common pitfalls and implementing the suggested solutions, you can build more reliable and efficient data pipelines. Regular monitoring, error handling, and optimization are key to maintaining the health of your data infrastructure.&lt;/p&gt;
+&lt;p&gt;Let me know if you&amp;rsquo;d like more details on any of these topics.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Test Note</title>
         <link>http://localhost:1313/test-note/</link>
         <pubDate>Wed, 27 Mar 2024 00:00:00 +0000</pubDate>
