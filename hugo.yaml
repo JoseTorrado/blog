@@ -2,7 +2,7 @@ baseurl: https://torrado.io
 languageCode: en-us
 enableEmoji: true
 theme: Stack
-paginate: 3
+paginate: 4
 title: Jose Torrado
 
 # Theme i18n support
@@ -188,9 +188,9 @@ params:
 
     defaultImage:
         opengraph:
-            enabled: false
-            local: false
-            src:
+            enabled: true
+            local: true
+            src: img/dog.png
 
     colorScheme:
         # Display toggle
