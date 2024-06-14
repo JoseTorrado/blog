@@ -1,13 +1,14 @@
 +++
 author = "Jose Torrado"
 title = "Scholarship Info"
-date = "2024-07-13"
+date = "2024-06-13"
 description = "Para mi querido Tomas"
 tags = [
-    "college"
+    "college",
+  "scholarships"
 ]
 categories = [
-    "zettlekasten"
+    "college"
 ]
 toc = false
 +++
