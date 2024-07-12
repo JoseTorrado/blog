@@ -6,7 +6,136 @@
         <description>Recent content on Jose Torrado</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Thu, 13 Jun 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Setting up a LocalDev Pyspark Environment with JupyterLab</title>
+        <link>http://localhost:1313/p/setting-up-a-localdev-pyspark-environment-with-jupyterlab/</link>
+        <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/setting-up-a-localdev-pyspark-environment-with-jupyterlab/</guid>
+        <description>&lt;img src="http://localhost:1313/p/setting-up-a-localdev-pyspark-environment-with-jupyterlab/jupyter-spark.png" alt="Featured image of post Setting up a LocalDev Pyspark Environment with JupyterLab" /&gt;&lt;p&gt;Spark is a staple in a data engineering toolset for distributed compute transformations. It does however have a level of overhead and dependencies that need to be sorted in order to set up. These are usually handled by Cloud Services natively (e.g. GCP Dataproc)&lt;/p&gt;
+&lt;p&gt;But if you are just getting started with learning Pyspark -
+or just want a lightweight and fast way to test some sytax locally,
+spinning up a cluster is additional complexity you might not want to deal with
+(not to mention it cost money)&lt;/p&gt;
+&lt;p&gt;A lot of the tutorials out there are not too intuitve, or are missing some key aspects
+that make the development experince easier.
+So I decided to compile a list of steps to get you started with pyspark locally quickly.
+Hope you find it useful!&lt;/p&gt;
+&lt;h2 id=&#34;prereqs&#34;&gt;Prereqs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Python (will be using verison 3.10)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Check if you have python by running&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;python --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;install-java&#34;&gt;Install Java&lt;/h2&gt;
+&lt;p&gt;Check if you already have it installed&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;java --version
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;If not, go &lt;a class=&#34;link&#34; href=&#34;https://www.java.com/en/download/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;here&lt;/a&gt; and follow the installation instructions&lt;/p&gt;
+&lt;h2 id=&#34;install-spark&#34;&gt;Install Spark&lt;/h2&gt;
+&lt;p&gt;The following commands are for Mac (Bash) - if you are running a bash shell in Windows these should work. Otherwise, they &lt;em&gt;might&lt;/em&gt; need to be slightly altered to run in powershell&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the &lt;a class=&#34;link&#34; href=&#34;https://spark.apache.org/downloads.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Spark Download&lt;/a&gt; page and get the latest version of spark&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Unzip the downloaded &lt;code&gt;.tgz&lt;/code&gt; file (zipped file)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Move the file to your &lt;code&gt;/opt/&lt;/code&gt; folder in Mac:&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo mv spark-3.5.1-bin-hadoop3 /opt/spark-3.5.1
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;In Windows you might not have this folder.
+The name or location is not really important as long as you have it somewhere it can&amp;rsquo;t be
+accidentally moved or deleted since it will be reference any time you spin up a notebook&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Create a symbolic link to make it easier to switch Spark versions&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;If you want to install a different version of Spark in the future, you can just adjust the symlink and everything else will still work&amp;hellip;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;sudo ln -s /opt/spark-3.5.1 /opt/spark
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;install-pyspark-and-jupyter&#34;&gt;Install Pyspark and Jupyter&lt;/h2&gt;
+&lt;p&gt;To keep things clean it is better to always use virtual environments when installing python modules. This can be done in many ways: conda envs, pipenv, venv, &amp;hellip;&lt;/p&gt;
+&lt;p&gt;Here I will be demonstrating with &lt;code&gt;venv&lt;/code&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new directory to work from: &lt;code&gt;mkdir jupyter-spark&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cd jupyter-spark&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create a virtual environment: &lt;code&gt;python -m venv .pyspark-en&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Activate the virtual environment: &lt;code&gt;source .pyspark-env/bin/activate&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Install pyspark and jupyterlab: &lt;code&gt;pip install pyspark jupyterlab&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;updating-your-shell-rc-file&#34;&gt;Updating your shell rc file&lt;/h2&gt;
+&lt;p&gt;Now you need to tell your shell where to find Spark - this is done by setting some environment variables&lt;/p&gt;
+&lt;p&gt;This can be done a variety of ways, but to make it as seamless as possible we will be handling it in the &lt;code&gt;~/.bashrc&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Note: depending on your shell, this step will be different. For example, if you use zsh as your shell, you will need to modify your &lt;code&gt;~/.zshrc&lt;/code&gt; instead&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Add the following environment variables:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# ~~~~~~~~~~~~~~~ Spark ~~~~~~~~~~~~~~~~~~~~~~~~&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Spark&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;SPARK_HOME&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;/opt/spark&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PATH&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;nv&#34;&gt;$PATH&lt;/span&gt;:&lt;span class=&#34;nv&#34;&gt;$SPARK_HOME&lt;/span&gt;/bin
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;SPARK_LOCAL_IP&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s2&#34;&gt;&amp;#34;127.0.0.1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# Pyspark&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PYSPARK_DRIVER_PYTHON&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;jupyter
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PYSPARK_DRIVER_PYTHON_OPTS&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;s1&#34;&gt;&amp;#39;lab&amp;#39;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;export&lt;/span&gt; &lt;span class=&#34;nv&#34;&gt;PYSPARK_PYTHON&lt;/span&gt;&lt;span class=&#34;o&#34;&gt;=&lt;/span&gt;python3
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;Save, exit and restart your shell&lt;/p&gt;
+&lt;h2 id=&#34;create-a-pyspark-notebook&#34;&gt;Create a Pyspark Notebook&lt;/h2&gt;
+&lt;p&gt;Done with the setup, now anytime you want to start your pyspark instance with JupyterLab locally you just need to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;cd into your directory where you installed pyspark&lt;/li&gt;
+&lt;li&gt;activate the virtual environment&lt;/li&gt;
+&lt;li&gt;run the command &lt;code&gt;pyspark&lt;/code&gt; in your shell&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This will open a JupyterLab instance in your default browser, and you are good to go!&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Scholarship Info</title>
         <link>http://localhost:1313/scholarship-info/</link>
         <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
