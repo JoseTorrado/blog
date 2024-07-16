@@ -6,7 +6,101 @@
         <description>Recent content on Jose Torrado</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Fri, 12 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Python vs SQL for Data Pipelines</title>
+        <link>http://localhost:1313/p/python-vs-sql-for-data-pipelines/</link>
+        <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/python-vs-sql-for-data-pipelines/</guid>
+        <description>&lt;img src="http://localhost:1313/p/python-vs-sql-for-data-pipelines/sqlvspython.png" alt="Featured image of post Python vs SQL for Data Pipelines" /&gt;&lt;p&gt;I&amp;rsquo;ll save you some time.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;There is no tool supremacy when it comes to ETL - SQL and Python are both excelent, that is why they are still around and extensively used&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;That being said though, &lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Law_of_the_instrument&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;choosing the right tool for the job is very important&lt;/a&gt;.
+To decide on one, you will want to know the strenghts and weakneses of both.&lt;/p&gt;
+&lt;h2 id=&#34;execution-engines-and-coding-interfaces&#34;&gt;Execution Engines and Coding Interfaces&lt;/h2&gt;
+&lt;p&gt;Your written code is simply a way for you to interact with an execution engine.
+It is an abstraction, a developer-friendly interface to comunicate with the execution engine running your transformations.&lt;/p&gt;
+&lt;p&gt;The most popular data wrangling tools work this way (Pandas, Polars, PySpark, SQL). Here is a diagram depicting the interface and execution engine relationships of some of these:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/python-vs-sql-for-data-pipelines/executionengine.png&#34;
+	width=&#34;1909&#34;
+	height=&#34;1051&#34;
+	srcset=&#34;http://localhost:1313/p/python-vs-sql-for-data-pipelines/executionengine_hube289182893cf5ccde313f02b19d149e_150456_480x0_resize_box_3.png 480w, http://localhost:1313/p/python-vs-sql-for-data-pipelines/executionengine_hube289182893cf5ccde313f02b19d149e_150456_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;Execution Engines and Code Interfaces&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;181&#34;
+		data-flex-basis=&#34;435px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;types-of-execution-engines&#34;&gt;Types of Execution Engines&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Single Node Systems&lt;/code&gt;: Designed to process data on a single machine (eg: Pandas, Polars, DuckDB)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Massive Parallel Processing&lt;/code&gt;: Systems designed to run processing tasks on multile nodes (eg: Spark, BigQuery, Snowflake, &amp;hellip;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Langugage Engine&lt;/code&gt;: A process that will take your written code and run the necessary logic (eg: CPython, JVM, BEAM, ..)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;types-of-coding-interfaces&#34;&gt;Types of Coding Interfaces&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Native&lt;/code&gt;: Using language specific data structures. In Python this means lists, dicts, tuples, etc. (Other languages here: Rust, Go, etc.)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Dataframe&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SQL&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;choosing-the-tool-for-the-job&#34;&gt;Choosing the tool for the job&lt;/h2&gt;
+&lt;p&gt;Developer&amp;rsquo;s familiarity and existing infrastructure are crucial - save on costs, use the frameworks already implemented by your org.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;No need to reinvent the wheel.
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;p&gt;However, assuming a greenfield project - here are the criteria that will help you narrow down which choice is right for your pipeline&lt;/p&gt;
+&lt;h3 id=&#34;what-does-your-workload-look-like&#34;&gt;What does your Workload look like?&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Your choice of execution engine will affect what kind of data processing you can do, the size of data to be processed and the coding interface.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Consider the following:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Performance&lt;/code&gt;: MPPs and Single node processing systems will generally perform faster than a custom Python implementation - because of the built in oprimizations for data processing efficiency&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Type of Transformation&lt;/code&gt;: SQL type transformations run blazing fast in MPPs. They are &lt;strong&gt;terrible&lt;/strong&gt;, however, when you need complex recursion, looping, or unsupported MLS algos (not surpported by MPP libraries like Spark MLLib).
+If your algo is not supported, or you require some of these complex operataions, it is better to go with Python&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Cost&lt;/code&gt;: Money, bread, bucks, cheddah. MPPs are expensive - even more when you have vendors managing them. Single node and Python pipelines can be ran on your laptop, at no additional cost.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Data Size&lt;/code&gt;: Native Python will begin having issues at the 100s GB mark.
+Single-node systems have similar processing limit.
+MPPs were created to process TB/PB of data - and they are good at it&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;Data Location&lt;/code&gt;: If you are storing your data in an MPP (eg: BigQuery), it is easiest to process it there than bring it out to another system&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;who-is-mantaining-your-pipleine&#34;&gt;Who is mantaining your Pipleine?&lt;/h3&gt;
+&lt;p&gt;You want to think about code reusability and how easy it is to test your code when picking a coding interface for your team.&lt;/p&gt;
+&lt;p&gt;Here are some criteria to consider when picking one:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;Learning Curve&lt;/code&gt;: SQL is easier to learn than Python. More pepople know SQL than Python - makes it more accessible to stakeholders. &lt;strong&gt;SQL wins&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Code Quality&lt;/code&gt;: While SQL provides &lt;em&gt;some&lt;/em&gt; reusability with CTEs/temp tables/Stored procedures, they can be hard to manage, mantain and monitor.
+Python is a general purpose programming language equipped with a wide variety of libraries that helps you wirte well-designed software. &lt;strong&gt;Python wins&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Non tabular data&lt;/code&gt;: Python can work with any arbitrary set of data (images, excel files, json, etc.). While some SQL systems allow us to work with non tabular data (eg: json, arrays, &amp;hellip;), it must be wrangled and formatted properly. &lt;strong&gt;Python wins&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Testing&lt;/code&gt;: Testing Python code is much simpler than testing a sql transformation. Python also has libraries like &lt;em&gt;pytest&lt;/em&gt; that make things even easier. &lt;strong&gt;Python wins&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Creating Visualizations&lt;/code&gt;: Most BI Tools integrate really well with SQL. Python also has great visualization libraries like plotly, dash, and streamlit for reporting. &lt;strong&gt;SQL and Python win&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;The choice is really based on your use case - but leveraging the criteria above can make your decision much easier.&lt;/p&gt;
+&lt;p&gt;&lt;sub&gt;&lt;sup&gt;Image cred: &lt;a class=&#34;link&#34; href=&#34;https://images.datacamp.com/image/upload/v1671797982/SQL_vs_Python_Header_a3d0ea728a.png&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://images.datacamp.com/image/upload/v1671797982/SQL_vs_Python_Header_a3d0ea728a.png&lt;/a&gt;&lt;/sup&gt;&lt;/sub&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Setting up a LocalDev Pyspark Environment with JupyterLab</title>
         <link>http://localhost:1313/p/setting-up-a-localdev-pyspark-environment-with-jupyterlab/</link>
         <pubDate>Fri, 12 Jul 2024 00:00:00 +0000</pubDate>
