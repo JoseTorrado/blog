@@ -3,16 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/advanced-airflow-crafting-robust-dags-with-error-handling-and-branching/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/airflow/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/data-engineering/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/data-engineering/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/orchestration/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pipelines/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/data-transformation/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/python/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/python-vs-sql-for-data-pipelines/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sql/</loc>
+    <lastmod>2024-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/distribute-compute/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
@@ -20,16 +50,10 @@
     <loc>http://localhost:1313/categories/jupyter/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/pyspark/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/setting-up-a-localdev-pyspark-environment-with-jupyterlab/</loc>
-    <lastmod>2024-07-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2024-07-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/tools/</loc>
@@ -53,16 +77,7 @@
     <loc>http://localhost:1313/tags/scholarships/</loc>
     <lastmod>2024-06-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/airflow/</loc>
-    <lastmod>2024-06-09T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/p/how-to-get-started-with-airflow-for-data-engineering/</loc>
-    <lastmod>2024-06-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/orchestration/</loc>
-    <lastmod>2024-06-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/pipelines/</loc>
     <lastmod>2024-06-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/boost-your-pyspark-performance-best-practices-for-data-pipelines/</loc>
@@ -130,18 +145,6 @@
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2024-03-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/data-transformation/</loc>
-    <lastmod>2023-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/p/just-use-sql-everythin-with-python/</loc>
-    <lastmod>2023-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
-    <lastmod>2023-07-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sql/</loc>
-    <lastmod>2023-07-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archives/</loc>
     <lastmod>2019-05-28T00:00:00+00:00</lastmod>

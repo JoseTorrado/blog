@@ -6,7 +6,57 @@
         <description>Recent content on Jose Torrado</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sun, 14 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Advanced Airflow: Crafting Robust DAGs with Error Handling and Branching</title>
+        <link>http://localhost:1313/p/advanced-airflow-crafting-robust-dags-with-error-handling-and-branching/</link>
+        <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/advanced-airflow-crafting-robust-dags-with-error-handling-and-branching/</guid>
+        <description>&lt;p&gt;We have taken a good look at airflow basics in my &lt;a class=&#34;link&#34; href=&#34;https://torrado.io/p/how-to-get-started-with-airflow-for-data-engineering/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;previous post&lt;/a&gt;, which is an excellent introduction to the concept of orchestration for data pipelines.&lt;/p&gt;
+&lt;p&gt;However, most of the real case scenarios you will face will need more than a linear sequence of tasks. In this post, we&amp;rsquo;ll explore advanced techniques for handling errors and creating dynamic workflows in Airflow, with a focus on the BranchPythonOperator and XCom.&lt;/p&gt;
+&lt;h2 id=&#34;the-power-or-branching&#34;&gt;The Power or Branching&lt;/h2&gt;
+&lt;p&gt;We covered before that one of the best features of Airflow is its dynamic generation of workflows. We can take that a step further by using the &lt;code&gt;BranchPythonOperator&lt;/code&gt; to make decision on what tasks to execute next at runtime - Making it super useful for advanced and robust error handling.&lt;/p&gt;
+&lt;h2 id=&#34;case-study---executing-jobs-in-dataproc&#34;&gt;Case Study - Executing Jobs in Dataproc&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s say you are using your DAG to submit serverless batch jobs in GCP Dataproc. The &lt;a class=&#34;link&#34; href=&#34;https://airflow.apache.org/docs/apache-airflow-providers-google/stable/operators/cloud/dataproc.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Dataproc Operator&lt;/a&gt; will return failure information from GCP to your airflow instance - and you want to use this to inform your task execution sequence.&lt;/p&gt;
+&lt;p&gt;In this case we will be looking out for &lt;code&gt;IP Exhaustion errors&lt;/code&gt;, which we will use as a signal to retry our job with a different subnet:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Initial Job Submission:&lt;/strong&gt;
+We start with a task that attempts to create a Dataproc job on our primary subnet.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Error Checking and Branching:&lt;/strong&gt;
+We use a BranchPythonOperator to check the result of the job submission. If it failed due to an IP space exhaustion, we branch to a task that tries an alternative subnet. If it succeeded or failed for other reasons, we branch to an end state.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Alternative Attempts:&lt;/strong&gt;
+We can have multiple alternative subnets, each followed by its own branching task.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Final Status Check:&lt;/strong&gt;
+A final branching task checks if any of the attempts were successful and directs the flow to either a success or failure end state.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/advanced-airflow-crafting-robust-dags-with-error-handling-and-branching/dag-diagram.png&#34;
+	width=&#34;1948&#34;
+	height=&#34;1406&#34;
+	srcset=&#34;http://localhost:1313/p/advanced-airflow-crafting-robust-dags-with-error-handling-and-branching/dag-diagram_hu53b5db2830c48acb405cd8edfa9d1606_136348_480x0_resize_box_3.png 480w, http://localhost:1313/p/advanced-airflow-crafting-robust-dags-with-error-handling-and-branching/dag-diagram_hu53b5db2830c48acb405cd8edfa9d1606_136348_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;The Flow would look something like this&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;138&#34;
+		data-flex-basis=&#34;332px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;testing&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Python vs SQL for Data Pipelines</title>
         <link>http://localhost:1313/p/python-vs-sql-for-data-pipelines/</link>
         <pubDate>Sun, 14 Jul 2024 00:00:00 +0000</pubDate>
