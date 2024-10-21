@@ -12,7 +12,7 @@ categories = [
     "orchestration",
     "data-engineering"
 ]
-image = ""
+image = "cover.png"
 +++
 
 We have taken a good look at airflow basics in my [previous post](https://torrado.io/p/how-to-get-started-with-airflow-for-data-engineering/), which is an excellent introduction to the concept of orchestration for data pipelines. 
