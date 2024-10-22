@@ -6,7 +6,75 @@
         <description>Recent content on Jose Torrado</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Authoritative vs Non-Authoritative Properties in Terraform</title>
+        <link>http://localhost:1313/p/authoritative-vs-non-authoritative-properties-in-terraform/</link>
+        <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/authoritative-vs-non-authoritative-properties-in-terraform/</guid>
+        <description>&lt;img src="http://localhost:1313/p/authoritative-vs-non-authoritative-properties-in-terraform/cover.png" alt="Featured image of post Authoritative vs Non-Authoritative Properties in Terraform" /&gt;&lt;h2 id=&#34;first-things-first&#34;&gt;First things First&lt;/h2&gt;
+&lt;p&gt;I have not yet talked about infrastructure too much on this blog, but it is a big player in data engineering work.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.terraform.io/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Terraform&lt;/a&gt; is what I primarily use as a tool to manage cloud infrastructure as code - and it is very popular.&lt;/p&gt;
+&lt;p&gt;I should dedicate a full series on infrastructure and the significance it has in our field. In the mean time, this is an interesting &lt;a class=&#34;link&#34; href=&#34;https://www.linkedin.com/pulse/data-engineering-101-three-types-engineers-you-need-know-matt-brady/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;article&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;the-actual-intro&#34;&gt;The actual intro&lt;/h2&gt;
+&lt;p&gt;Alright, now when using Terraform to manage IAM bindings, in GCP for example, it is &lt;strong&gt;crucial&lt;/strong&gt; to understand auth vs non-auth properties.&lt;/p&gt;
+&lt;h2 id=&#34;authoritative-properties&#34;&gt;Authoritative Properties&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;Authoritative Properties&lt;/code&gt; mean that terraform has full control over the resource.&lt;/p&gt;
+&lt;p&gt;This means any changes made outside of terraform - like a manual adjustment in the cloud console - will be
+overwritten on the next &lt;code&gt;terraform apply&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;You want to use these when you need strict compliance and consistency. For example, managing roles for a critical production environment. Any unauthorized changes outside of terraform can lead to security vulnerabilities.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;google_project_iam_binding&lt;/code&gt; resource is Authoritative in nature:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;8
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-hcl&#34; data-lang=&#34;hcl&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;resource&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;google_project_iam_binding&amp;#34; &amp;#34;editor&amp;#34;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;  project&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;your-project-id&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;  role&lt;/span&gt;    &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;roles/editor&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;  members&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;p&#34;&gt;[&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    &lt;span class=&#34;s2&#34;&gt;&amp;#34;user:example-user@example.com&amp;#34;&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;  &lt;span class=&#34;p&#34;&gt;]&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;non-authoritative-properties&#34;&gt;Non Authoritative Properties&lt;/h2&gt;
+&lt;p&gt;These will allow more flexibility. It allows terraform to manage aspects fo a resource without overwriting
+changes made by other systems, tools or processes.&lt;/p&gt;
+&lt;p&gt;This comes in handy when you have multiple teams or systems managing a set of resources. Non-authoritative management allows teams to &amp;ldquo;coexist&amp;rdquo; without overwriting each other&amp;rsquo;s changes&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;google_project_iam_member&lt;/code&gt; resource is Non-Authoritative:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-hcl&#34; data-lang=&#34;hcl&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;k&#34;&gt;resource&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;google_project_iam_member&amp;#34; &amp;#34;viewer&amp;#34;&lt;/span&gt; {
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;  project&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;your-project-id&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;  role&lt;/span&gt;    &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;roles/viewer&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;n&#34;&gt;  member&lt;/span&gt;  &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;user:another-user@example.com&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;closing&#34;&gt;Closing&lt;/h2&gt;
+&lt;p&gt;As always, it depends. If you need strict compliance, you might want to opt for auth. If you need more flexibility or a loosely coupled system however, you might want to go for non-auth&lt;/p&gt;
+&lt;p&gt;What&amp;rsquo;s important is to know what tools are available.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Advanced Airflow: Crafting Robust DAGs with Error Handling and Branching</title>
         <link>http://localhost:1313/p/advanced-airflow-crafting-robust-dags-with-error-handling-and-branching/</link>
         <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>

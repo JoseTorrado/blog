@@ -23,11 +23,35 @@
         <description></description>
         </item>
         <item>
+        <title>DevOps</title>
+        <link>http://localhost:1313/categories/devops/</link>
+        <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/devops/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>IaC</title>
+        <link>http://localhost:1313/categories/iac/</link>
+        <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/iac/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Orchestration</title>
         <link>http://localhost:1313/categories/orchestration/</link>
         <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/orchestration/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Terraform</title>
+        <link>http://localhost:1313/categories/terraform/</link>
+        <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/terraform/</guid>
         <description></description>
         </item>
         <item>

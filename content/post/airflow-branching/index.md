@@ -2,7 +2,7 @@
 author = "Jose Torrado"
 title = "Advanced Airflow: Crafting Robust DAGs with Error Handling and Branching"
 date = "2024-10-19"
-description = "get good at airflow"
+description = "Get good at airflow"
 tags = [
     "data-engineering",
     "pipelines"
