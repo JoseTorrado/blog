@@ -21,26 +21,34 @@ In the realm of data roles, much of the spotlight tends to shine on data analyti
 
 Data Engineering, however, is a bit different in its purpose and execution. If data science is the intrepid explorer, data engineering is the meticulous city planner who turns those discoveries into a thriving metropolis. It's the art of transforming the exploratory results of data scientists and analysts into robust, production-grade products. *This process aligns closely with the principles and practices of software engineering.*
 
-![is this working](test2.png)
-
 ## **The Role of a Data Engineer**
 
 As a data engineer, your role involves developing highly available systems that provide data to your stakeholders. Whether these systems feed internal dashboards for routine managerial reviews or stream data to APIs for customer-facing applications that detect suspicious credit card activity, the applications are varied and critical.
 
 ## **Parallels with Software Engineering**
 
-- **Scalable Systems**: The need for systems capable of efficiently processing increasing volumes of data.
-- **System Maintenance**: Includes CI/CD pipelines, Kubernetes clusters, and container orchestration.
+![I promise I'll get better at graphics](test2.png)
+
+The parallels with software engineering become apparent when considering the need for scalable systems capable of efficiently processing increasing volumes of data. This requires careful attention to availability, platform constraints, and architectural design. Maintenance and operation of these systems often include CI/CD pipelines, Kubernetes clusters, and container orchestration.
 
 ## **Team Coordination and Standardization**
 
-- **Coding Practices**: Standardization of coding practices and branching strategies.
-- **Developer Tooling**: Empowering engineers through Dockerized testing environments and robust local development setups.
+As the scale of operations grows, so does the team. This necessitates the standardization of:
+- **Coding Best Practices** (OOP, DRY, [SRP](https://en.wikipedia.org/wiki/Single-responsibility_principle), Documentation)
+- **Code Versioning, Branching and Promotion Strategies** 
+- **Developer Tooling** 
+
+How do you empower your engineers to excel without tripping over their own shoelaces? Think Dockerized testing environments that replicate cloud systems locally, and robust local development environments that foster creativity without friction.
 
 ## **Ensuring Reliability and Compliance**
 
-- **Testing Suite**: A comprehensive suite including unit tests, integration tests, vulnerability scans, and code audits.
-- **Data Privacy and Compliance**: Rigorous governance, access control, and adherence to regulations like GDPR.
+Reliability is paramount. A comprehensive testing suite is not just beneficial; it's essential. Think a comprehensive suite including:
+- **Unit Tests**
+- **Integration Tests**
+- **Vulnerability Scans**
+- **Code Audits** (ex: Code Reviews and scans)
+
+And then there's the ever-important realm of privacy and compliance. Handling customer data demands rigorous governance. Who can access your data? How do you manage regional data separation and adhere to stringent regulations like GDPR?
 
 ## **Closing Thoughts**
 
