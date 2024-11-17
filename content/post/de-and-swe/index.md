@@ -1,6 +1,6 @@
 +++
 author = "Jose Torrado"
-title = "How Data Engineering is SWE"
+title = "How Data Engineering is actually SWE"
 date = "2024-11-16"
 description = "And why every DE should care"
 tags = [
