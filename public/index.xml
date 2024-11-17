@@ -7,15 +7,29 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
         <lastBuildDate>Sat, 16 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>How Data Engineering is SWE</title>
-        <link>http://localhost:1313/p/how-data-engineering-is-swe/</link>
+        <title>How Data Engineering is actually SWE</title>
+        <link>http://localhost:1313/p/how-data-engineering-is-actually-swe/</link>
         <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
         
-        <guid>http://localhost:1313/p/how-data-engineering-is-swe/</guid>
-        <description>&lt;img src="http://localhost:1313/p/how-data-engineering-is-swe/fighting-bots.gif" alt="Featured image of post How Data Engineering is SWE" /&gt;&lt;h2 id=&#34;data-engineering-a-pillar-of-software-engineering&#34;&gt;&lt;strong&gt;Data Engineering: A Pillar of Software Engineering&lt;/strong&gt;&lt;/h2&gt;
+        <guid>http://localhost:1313/p/how-data-engineering-is-actually-swe/</guid>
+        <description>&lt;img src="http://localhost:1313/p/how-data-engineering-is-actually-swe/fighting-bots.gif" alt="Featured image of post How Data Engineering is actually SWE" /&gt;&lt;h2 id=&#34;data-engineering-a-pillar-of-software-engineering&#34;&gt;&lt;strong&gt;Data Engineering: A Pillar of Software Engineering&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;In the realm of data roles, much of the spotlight tends to shine on data analytics and data science. These fields are often portrayed as the glamorous, exploratory cousins of the data world, full of Jupyter notebooks, trial-and-error experiments, and the occasional &amp;ldquo;eureka&amp;rdquo; moment. While they certainly have their disciplined facets, their core nature often leans toward the exploratory and the innovative.&lt;/p&gt;
 &lt;h2 id=&#34;defining-data-engineering&#34;&gt;&lt;strong&gt;Defining Data Engineering&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;Data Engineering, however, is a bit different in its purpose and execution. If data science is the intrepid explorer, data engineering is the meticulous city planner who turns those discoveries into a thriving metropolis. It&amp;rsquo;s the art of transforming the exploratory results of data scientists and analysts into robust, production-grade products. &lt;em&gt;This process aligns closely with the principles and practices of software engineering.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/p/how-data-engineering-is-actually-swe/test2.png&#34;
+	width=&#34;1590&#34;
+	height=&#34;834&#34;
+	srcset=&#34;http://localhost:1313/p/how-data-engineering-is-actually-swe/test2_huf53aaa78fd9e4b39ab49a1ff60704df0_102143_480x0_resize_box_3.png 480w, http://localhost:1313/p/how-data-engineering-is-actually-swe/test2_huf53aaa78fd9e4b39ab49a1ff60704df0_102143_1024x0_resize_box_3.png 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;is this working?&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;190&#34;
+		data-flex-basis=&#34;457px&#34;
+	
+&gt;&lt;/p&gt;
 &lt;h2 id=&#34;the-role-of-a-data-engineer&#34;&gt;&lt;strong&gt;The Role of a Data Engineer&lt;/strong&gt;&lt;/h2&gt;
 &lt;p&gt;As a data engineer, your role involves developing highly available systems that provide data to your stakeholders. Whether these systems feed internal dashboards for routine managerial reviews or stream data to APIs for customer-facing applications that detect suspicious credit card activity, the applications are varied and critical.&lt;/p&gt;
 &lt;h2 id=&#34;parallels-with-software-engineering&#34;&gt;&lt;strong&gt;Parallels with Software Engineering&lt;/strong&gt;&lt;/h2&gt;

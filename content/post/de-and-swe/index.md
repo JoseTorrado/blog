@@ -21,6 +21,8 @@ In the realm of data roles, much of the spotlight tends to shine on data analyti
 
 Data Engineering, however, is a bit different in its purpose and execution. If data science is the intrepid explorer, data engineering is the meticulous city planner who turns those discoveries into a thriving metropolis. It's the art of transforming the exploratory results of data scientists and analysts into robust, production-grade products. *This process aligns closely with the principles and practices of software engineering.*
 
+![is this working](test2.png)
+
 ## **The Role of a Data Engineer**
 
 As a data engineer, your role involves developing highly available systems that provide data to your stakeholders. Whether these systems feed internal dashboards for routine managerial reviews or stream data to APIs for customer-facing applications that detect suspicious credit card activity, the applications are varied and critical.
