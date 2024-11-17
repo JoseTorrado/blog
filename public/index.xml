@@ -6,7 +6,39 @@
         <description>Recent content on Jose Torrado</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Mon, 21 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 16 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>How Data Engineering is SWE</title>
+        <link>http://localhost:1313/p/how-data-engineering-is-swe/</link>
+        <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/p/how-data-engineering-is-swe/</guid>
+        <description>&lt;img src="http://localhost:1313/p/how-data-engineering-is-swe/fighting-bots.gif" alt="Featured image of post How Data Engineering is SWE" /&gt;&lt;h2 id=&#34;data-engineering-a-pillar-of-software-engineering&#34;&gt;&lt;strong&gt;Data Engineering: A Pillar of Software Engineering&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;In the realm of data roles, much of the spotlight tends to shine on data analytics and data science. These fields are often portrayed as the glamorous, exploratory cousins of the data world, full of Jupyter notebooks, trial-and-error experiments, and the occasional &amp;ldquo;eureka&amp;rdquo; moment. While they certainly have their disciplined facets, their core nature often leans toward the exploratory and the innovative.&lt;/p&gt;
+&lt;h2 id=&#34;defining-data-engineering&#34;&gt;&lt;strong&gt;Defining Data Engineering&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;Data Engineering, however, is a bit different in its purpose and execution. If data science is the intrepid explorer, data engineering is the meticulous city planner who turns those discoveries into a thriving metropolis. It&amp;rsquo;s the art of transforming the exploratory results of data scientists and analysts into robust, production-grade products. &lt;em&gt;This process aligns closely with the principles and practices of software engineering.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&#34;the-role-of-a-data-engineer&#34;&gt;&lt;strong&gt;The Role of a Data Engineer&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;As a data engineer, your role involves developing highly available systems that provide data to your stakeholders. Whether these systems feed internal dashboards for routine managerial reviews or stream data to APIs for customer-facing applications that detect suspicious credit card activity, the applications are varied and critical.&lt;/p&gt;
+&lt;h2 id=&#34;parallels-with-software-engineering&#34;&gt;&lt;strong&gt;Parallels with Software Engineering&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Scalable Systems&lt;/strong&gt;: The need for systems capable of efficiently processing increasing volumes of data.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;System Maintenance&lt;/strong&gt;: Includes CI/CD pipelines, Kubernetes clusters, and container orchestration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;team-coordination-and-standardization&#34;&gt;&lt;strong&gt;Team Coordination and Standardization&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Coding Practices&lt;/strong&gt;: Standardization of coding practices and branching strategies.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Developer Tooling&lt;/strong&gt;: Empowering engineers through Dockerized testing environments and robust local development setups.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;ensuring-reliability-and-compliance&#34;&gt;&lt;strong&gt;Ensuring Reliability and Compliance&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Testing Suite&lt;/strong&gt;: A comprehensive suite including unit tests, integration tests, vulnerability scans, and code audits.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Data Privacy and Compliance&lt;/strong&gt;: Rigorous governance, access control, and adherence to regulations like GDPR.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;closing-thoughts&#34;&gt;&lt;strong&gt;Closing Thoughts&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;As systems and pipelines gain formality and importance to the business, data engineering reveals its true colors as a branch of software engineering. Those who have navigated the complex waters of large-scale data projects will likely nod in agreement: Data Engineering is, indeed, software engineering with a specific focus. It should adhere to all the best practices and principles that define software engineering excellence.&lt;/p&gt;
+&lt;p&gt;Ultimately, &lt;em&gt;data engineering is not merely a related discipline but a fundamental component of software engineering&lt;/em&gt;, and data engineers should embrace this perspective by integrating best practices and standards into their system designs.&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>Authoritative vs Non-Authoritative Properties in Terraform</title>
         <link>http://localhost:1313/p/authoritative-vs-non-authoritative-properties-in-terraform/</link>
         <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>

@@ -6,7 +6,47 @@
         <description>Recent content in Categories on Jose Torrado</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Sat, 19 Oct 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 16 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Data-Engineering</title>
+        <link>http://localhost:1313/categories/data-engineering/</link>
+        <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/data-engineering/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Pipelines</title>
+        <link>http://localhost:1313/categories/pipelines/</link>
+        <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/pipelines/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>DevOps</title>
+        <link>http://localhost:1313/categories/devops/</link>
+        <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/devops/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>IaC</title>
+        <link>http://localhost:1313/categories/iac/</link>
+        <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/iac/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Terraform</title>
+        <link>http://localhost:1313/categories/terraform/</link>
+        <pubDate>Mon, 21 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/categories/terraform/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Airflow</title>
         <link>http://localhost:1313/categories/airflow/</link>
         <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
@@ -15,43 +55,11 @@
         <description></description>
         </item>
         <item>
-        <title>Data-Engineering</title>
-        <link>http://localhost:1313/categories/data-engineering/</link>
-        <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/data-engineering/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>DevOps</title>
-        <link>http://localhost:1313/categories/devops/</link>
-        <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/devops/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>IaC</title>
-        <link>http://localhost:1313/categories/iac/</link>
-        <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/iac/</guid>
-        <description></description>
-        </item>
-        <item>
         <title>Orchestration</title>
         <link>http://localhost:1313/categories/orchestration/</link>
         <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/orchestration/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Terraform</title>
-        <link>http://localhost:1313/categories/terraform/</link>
-        <pubDate>Sat, 19 Oct 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/terraform/</guid>
         <description></description>
         </item>
         <item>
@@ -84,14 +92,6 @@
         <pubDate>Thu, 13 Jun 2024 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/categories/college/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>Pipelines</title>
-        <link>http://localhost:1313/categories/pipelines/</link>
-        <pubDate>Mon, 03 Jun 2024 00:00:00 +0000</pubDate>
-        
-        <guid>http://localhost:1313/categories/pipelines/</guid>
         <description></description>
         </item>
         <item>

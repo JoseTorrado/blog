@@ -3,7 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
+    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/data-engineering/</loc>
+    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/data-engineering/</loc>
+    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/how-data-engineering-is-swe/</loc>
+    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/pipelines/</loc>
+    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/</loc>
+    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2024-11-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/p/authoritative-vs-non-authoritative-properties-in-terraform/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cloud/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/devops/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/iac/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/infrastructure/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/terraform/</loc>
+    <lastmod>2024-10-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/p/advanced-airflow-crafting-robust-dags-with-error-handling-and-branching/</loc>
     <lastmod>2024-10-19T00:00:00+00:00</lastmod>
@@ -11,43 +50,10 @@
     <loc>http://localhost:1313/categories/airflow/</loc>
     <lastmod>2024-10-19T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/p/authoritative-vs-non-authoritative-properties-in-terraform/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cloud/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/data-engineering/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/data-engineering/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/devops/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/iac/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/infrastructure/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/orchestration/</loc>
     <lastmod>2024-10-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/pipelines/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/post/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2024-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/terraform/</loc>
     <lastmod>2024-10-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/data-transformation/</loc>
@@ -102,9 +108,6 @@
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/optimization/</loc>
-    <lastmod>2024-06-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/pipelines/</loc>
     <lastmod>2024-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/spark/</loc>
