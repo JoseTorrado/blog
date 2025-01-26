@@ -18,7 +18,7 @@ This is going to be a long one—mainly because it covers a *very* popular topic
 
 ---
 
-### What Is a Streaming Pipeline?
+## What Is a Streaming Pipeline?
 
 A streaming pipeline is typically defined as a system that processes data in real time. In other words, as soon as new records are generated, they’re fed into and processed by your pipeline. There’s little to no waiting around—everything happens (almost) immediately.
 
@@ -29,7 +29,7 @@ A useful distinction can be made between true streaming and *near* real-time pro
 
 ---
 
-### How Does a Streaming Pipeline Differ from a Batch Pipeline?
+## How Does a Streaming Pipeline Differ from a Batch Pipeline?
 
 A **batch pipeline** behaves like a sequence of tasks (often orchestrated in DAGs—[see my Airflow article](https://torrado.io/p/how-to-get-started-with-airflow-for-data-engineering/)) that run on a schedule. In each run, the batch job processes a specific time range of data.
 
@@ -58,7 +58,7 @@ Below is a general breakdown of components you’ll find in many streaming pipel
 
 ---
 
-### Challenges of a Streaming Pipeline
+## Challenges of a Streaming Pipeline
 
 While streaming pipelines are powerful, they bring unique complexities:
 
@@ -72,7 +72,7 @@ Luckily, modern frameworks like Flink offer built-in mechanisms for stateful str
 
 ---
 
-### When Does It Make Sense to Use a Streaming Pipeline?
+## When Does It Make Sense to Use a Streaming Pipeline?
 
 The **main benefit** of a streaming pipeline is low latency. If you truly need real-time insights—whether for triggering immediate actions or providing up-to-the-minute analytics—streaming pipelines shine.
 
